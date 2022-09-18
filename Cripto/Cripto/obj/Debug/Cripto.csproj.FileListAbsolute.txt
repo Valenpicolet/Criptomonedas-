@@ -1,0 +1,14 @@
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\bin\Debug\Cripto.exe.config
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\bin\Debug\Cripto.exe
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\bin\Debug\Cripto.pdb
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\bin\Debug\Guna.UI2.dll
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\obj\Debug\Cripto.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\obj\Debug\Cripto.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\obj\Debug\Cripto.Properties.Resources.resources
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\obj\Debug\Cripto.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\obj\Debug\Cripto.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\obj\Debug\Cripto.csproj.CopyComplete
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\obj\Debug\Cripto.pdb
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\obj\Debug\Cripto.FrmCotizaciones.resources
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\obj\Debug\Cripto.Interfaces.FrmMonederos.resources
+C:\Users\Usuario\Documents\Mis Documentos Viejo\Valentina\facu\PAV1\Cripto\Cripto\obj\Debug\Cripto.BtnMonedero.resources

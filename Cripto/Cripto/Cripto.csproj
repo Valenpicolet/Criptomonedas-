@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D513EF13-E614-4647-9085-B05E33313D09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Cripto</RootNamespace>
+    <AssemblyName>Cripto</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cripto">
+      <HintPath>obj\Debug\Cripto.exe</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controles\BtnMonedero.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controles\BtnMonedero.Designer.cs">
+      <DependentUpon>BtnMonedero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Cotizaciones.cs" />
+    <Compile Include="Entidades\Monedero.cs" />
+    <Compile Include="Interfaces\FrmCotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmCotizaciones.Designer.cs">
+      <DependentUpon>FrmCotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\FrmMonederos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmMonederos.Designer.cs">
+      <DependentUpon>FrmMonederos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorio\CotizacionesRepositorio.cs" />
+    <Compile Include="Repositorio\DBHelper.cs" />
+    <Compile Include="Repositorio\MonederoRepositorio.cs" />
+    <Compile Include="Servicios\MonederosServicio.cs" />
+    <EmbeddedResource Include="Controles\BtnMonedero.resx">
+      <DependentUpon>BtnMonedero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmCotizaciones.resx">
+      <DependentUpon>FrmCotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmMonederos.resx">
+      <DependentUpon>FrmMonederos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Recursos\2845693_bitcoin_cryptocurrency_line_template_icon.png" />
+    <Content Include="Recursos\back_grey.png" />
+    <Content Include="Recursos\back_white.png" />
+    <Content Include="Recursos\ethereum_icon.png" />
+    <Content Include="Recursos\2845703_bitcoin_cryptocurrency_line_litecoin_template_icon.png" />
+    <Content Include="Recursos\4634974_wallet_coin_financial_money_icon %281%29.png" />
+    <Content Include="Recursos\4634974_wallet_coin_financial_money_icon %283%29.png" />
+    <Content Include="Recursos\4634993_coins_arrows_coin_financial_money_icon %282%29.png" />
+    <Content Include="Recursos\4634993_coins_arrows_coin_financial_money_icon %283%29.png" />
+    <Content Include="Recursos\4634998_chart_analytics_dashboard_graphic_icon %281%29.png" />
+    <Content Include="Recursos\4634998_chart_analytics_dashboard_graphic_icon %283%29.png" />
+    <Content Include="Recursos\9356043_dashboard_icon.png" />
+    <Content Include="Recursos\binance.png" />
+    <Content Include="Recursos\dashboard.png" />
+    <Content Include="Recursos\exit.png" />
+    <Content Include="Recursos\minimize.png" />
+    <Content Include="Recursos\Uwallet.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
